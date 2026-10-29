@@ -1,0 +1,33 @@
+{
+  "bulk": {
+    "third1": {
+      "replica_mean": 0.0909090909090909,
+      "replica_sd": 0.1574591643244434
+    },
+    "third2": {
+      "replica_mean": 0.0196078431372549,
+      "replica_sd": 0.03396178054056622
+    },
+    "third3": {
+      "replica_mean": 0.0,
+      "replica_sd": 0.0
+    }
+  },
+  "near": {
+    "third1": {
+      "replica_mean": 3.686868686868687,
+      "replica_sd": 1.0766463820097594
+    },
+    "third2": {
+      "replica_mean": 3.4901960784313726,
+      "replica_sd": 1.911840119176238
+    },
+    "third3": {
+      "replica_mean": 3.1176470588235294,
+      "replica_sd": 0.8665246978033078
+    }
+  },
+  "steps": 12000,
+  "replicas": 3,
+  "note": "toy model; nonequilibrium initialization; reduced units only"
+}

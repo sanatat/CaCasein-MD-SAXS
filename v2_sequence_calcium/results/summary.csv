@@ -1,0 +1,4 @@
+condition,bridge_strength_proxy_kbt,replicas,steps,late_window_fraction,largest_cluster_chains_mean,cluster_count_mean,largest_cluster_rg_reduced_mean,largest_cluster_chains_replica_sd,cluster_count_replica_sd,largest_cluster_rg_reduced_replica_sd,mean_scattering_I0_per_scattering_weight
+off,0.0,3,3200,0.45,8.0,1.0,3.7734901917725154,0.0,0.0,0.14187803326757642,166.70471389670354
+low,0.7,3,3200,0.45,8.0,1.0,3.788872038065707,0.0,0.0,0.1907252255677896,166.7005527083286
+high,1.4,3,3200,0.45,8.0,1.0,3.7587657476398046,0.0,0.0,0.27148428656664275,166.70737216542986

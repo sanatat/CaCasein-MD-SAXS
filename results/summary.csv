@@ -1,0 +1,4 @@
+scenario,epsilon_interchain_kbt,replicas,late_frames,mean_largest_cluster_chains,mean_cluster_count,mean_largest_cluster_rg_reduced,mean_weight_average_aggregate_chains,I0_per_bead_from_late_frame_mean
+weak,0.1,3,84,2.1904761904761907,10.19047619047619,1.8328949644253518,1.456349206349206,8.738095238095237
+medium,0.65,3,84,8.773809523809524,3.6785714285714284,2.8735021797871574,7.567460317460317,45.404761904761905
+strong,1.5,3,84,12.0,1.0,2.150713746690925,12.0,72.0

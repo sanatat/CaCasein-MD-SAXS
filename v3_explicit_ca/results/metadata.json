@@ -1,0 +1,45 @@
+{
+  "model": "Explicit divalent Ca2+ bead with screened electrostatic and toy local phosphate Gaussian; bead spring beta-casein A2",
+  "status": "NONCALIBRATED EXPERIMENTAL CODE; no experimental validation, no actual calcium concentration, not Martini 3",
+  "biological_model": "4 beta-casein A2 chains, 21 beads/chain, 5 phosphoserines per chain mapped into 2 sites",
+  "coarse_graining": "~10 AA per bead, sequence-informed; cannot resolve calcium coordination geometry",
+  "force_field": "homemade phenomenological; screened charge, WCA, harmonic bonds, sequence hydrophobicity, Ca-phosphate attraction",
+  "calcium": "explicit mobile point beads with formal +2 charge (screened potential); no counterions or explicit water",
+  "conditions": {
+    "no_ca": {
+      "n_ca": 0,
+      "coord_eps": 0.0
+    },
+    "ca8_no_coord": {
+      "n_ca": 8,
+      "coord_eps": 0.0
+    },
+    "ca8_coord": {
+      "n_ca": 8,
+      "coord_eps": 3.0
+    },
+    "ca16_coord": {
+      "n_ca": 16,
+      "coord_eps": 3.0
+    }
+  },
+  "box_reduced": 42.0,
+  "dt_reduced": 0.002,
+  "steps": 2400,
+  "stride": 80,
+  "replicas": 3,
+  "seed": 20261029,
+  "initialization": "protein chains prepared in common aligned bundle; ions randomly initialized locally near phosphosite beads; may bias binding, not equilibrated",
+  "saxs": "protein-only independently scattered clusters via Debye formula, normalized shape; no solvent excess electron density, no structure factor, no absolute nm^-1 q",
+  "P_r": "pair distance distribution for protein beads only, NOT rigorous SAXS P(r) reconstruction",
+  "time": "reduced units only; late 50 percent of short trajectories are not demonstrated equilibrium",
+  "physical_mapping_to_experimental_units": false,
+  "comparison_to_experimental_saxs_performed": false,
+  "DO_NOT_CLAIM": [
+    "quantitative calcium concentration",
+    "full casein micelle",
+    "Martini3",
+    "SAXS experimental agreement",
+    "physical binding affinity"
+  ]
+}

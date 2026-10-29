@@ -1,0 +1,57 @@
+{
+  "model": "V4 exploratory implicit-solvent bead Langevin MD with explicit mobile Ca proxy",
+  "status": "NOT Martini 3; not calibrated; no experimental fit performed",
+  "main_new_control": "uniform bulk vs local Ca initial placement; same protein initial structure; matched random seeds",
+  "n_chains": 4,
+  "sequence": "bovine beta-casein A2 209 aa",
+  "aa_per_bead": "~10",
+  "total_protein_beads": 84,
+  "reduced_box": 42.0,
+  "reduced_dt": 0.002,
+  "steps": 4000,
+  "stride": 100,
+  "replicas": 3,
+  "seed": 20261029,
+  "sampling": "last half of each run; this does not establish equilibrium",
+  "condition_definitions": {
+    "no_ca": [
+      0,
+      0.0,
+      "none"
+    ],
+    "ca8_inert_bulk": [
+      8,
+      0.0,
+      "bulk"
+    ],
+    "ca8_coord_bulk": [
+      8,
+      3.0,
+      "bulk"
+    ],
+    "ca8_coord_near": [
+      8,
+      3.0,
+      "near"
+    ],
+    "ca16_coord_bulk": [
+      16,
+      3.0,
+      "bulk"
+    ]
+  },
+  "saxs": "incoherent sum of independently scattered unwrapped clusters; protein-only toy weights; no solvent or Ca contrasts; q in inverse reduced units",
+  "uncertainty": "between-replica SD and illustrative Student-t intervals (n small, no proof of convergence)",
+  "physical_units": false,
+  "experimental_data_used": false,
+  "limitations": [
+    "short trajectories, not equilibrated",
+    "protein bundle initialized artificially",
+    "no counterions or explicit water",
+    "coarse-grain phosphate chemistry not atomistically resolved",
+    "not a real milk micelle",
+    "not Martini",
+    "no physical calcium molarity",
+    "synthetic SAXS only"
+  ]
+}

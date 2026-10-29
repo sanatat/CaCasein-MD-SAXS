@@ -1,0 +1,27 @@
+{
+  "title": "CaCasein-MD-SAXS Pilot",
+  "date_utc": "2026-10-29",
+  "status": "in-silico toy model, not calibrated casein",
+  "integrator": "BAOAB Langevin MD",
+  "chains": 12,
+  "beads_per_chain": 6,
+  "box_reduced": 30.0,
+  "dt_reduced": 0.004,
+  "gamma_reduced": 1.0,
+  "temperature_kbt": 1.0,
+  "bond_k_reduced": 100.0,
+  "epsilon_interchain": {
+    "weak": 0.1,
+    "medium": 0.65,
+    "strong": 1.5
+  },
+  "steps": 12000,
+  "save_stride_steps": 200,
+  "replicas": 3,
+  "seed_base": 20261029,
+  "SAXS": "isotropic Debye, point contrast=1, ensemble dilute no interference",
+  "length_units": "reduced sigma, NOT physical nanometers",
+  "time_units": "reduced, NOT physical seconds",
+  "caveat": "epsilon is attraction proxy; no explicit Ca ions, casein sequences, Martini, solvent, solvent contrast or experimental data",
+  "late_analysis_start_fraction": 0.55
+}

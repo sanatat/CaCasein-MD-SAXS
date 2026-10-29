@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "weak",
+    "independent_replicas": 3,
+    "mean_largest_cluster_chains": 2.1904761904761902,
+    "sd_across_replicas_largest_cluster_chains": 1.0254002039356598,
+    "mean_cluster_count": 10.19047619047619,
+    "sd_across_replicas_cluster_count": 1.5577052282865629,
+    "mean_largest_cluster_rg": 1.8328949644253518,
+    "sd_across_replicas_largest_cluster_rg": 0.49656872627096105,
+    "mean_weight_average_aggregate_chains": 1.4563492063492067,
+    "sd_across_replicas_weight_average_aggregate_chains": 0.5056488351811268
+  },
+  {
+    "scenario": "medium",
+    "independent_replicas": 3,
+    "mean_largest_cluster_chains": 8.773809523809524,
+    "sd_across_replicas_largest_cluster_chains": 3.209189081033265,
+    "mean_cluster_count": 3.6785714285714284,
+    "sd_across_replicas_cluster_count": 2.8443911869659906,
+    "mean_largest_cluster_rg": 2.873502179787158,
+    "sd_across_replicas_largest_cluster_rg": 0.3676096635814869,
+    "mean_weight_average_aggregate_chains": 7.567460317460316,
+    "sd_across_replicas_weight_average_aggregate_chains": 3.7665796249449763
+  },
+  {
+    "scenario": "strong",
+    "independent_replicas": 3,
+    "mean_largest_cluster_chains": 12.0,
+    "sd_across_replicas_largest_cluster_chains": 0.0,
+    "mean_cluster_count": 1.0,
+    "sd_across_replicas_cluster_count": 0.0,
+    "mean_largest_cluster_rg": 2.1507137466909256,
+    "sd_across_replicas_largest_cluster_rg": 0.02253387989754421,
+    "mean_weight_average_aggregate_chains": 12.0,
+    "sd_across_replicas_weight_average_aggregate_chains": 0.0
+  }
+]

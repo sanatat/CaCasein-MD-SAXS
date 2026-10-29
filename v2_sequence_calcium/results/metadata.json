@@ -1,0 +1,36 @@
+{
+  "kind": "Sequence-informed phenomenological Langevin bead-spring MD; NOT calibrated casein MD",
+  "protein": "Bovine beta-casein A2 mature chain 209 amino acids (BIOPEP-UWM ID 1843; UniProt P02666)",
+  "phosphoserines_mature_1based": [
+    15,
+    17,
+    18,
+    19,
+    35
+  ],
+  "aa_per_bead": 10,
+  "chains": 8,
+  "beads_per_chain": 21,
+  "box_reduced": 54.0,
+  "conditions_bridge_kBT": {
+    "off": 0.0,
+    "low": 0.7,
+    "high": 1.4
+  },
+  "bridge_potential": "attractive gaussian between interchain phosphoserine-rich beads",
+  "hydrophobicity": "sequence enriched, heuristic gaussian attraction",
+  "electrostatics": "charge proxy screened Yukawa",
+  "thermostat": "Langevin BAOAB",
+  "initial_conditions": "all conditions start as a common preassembled bundle (retention study)",
+  "dt_reduced": 0.003,
+  "gamma": 1.0,
+  "kBT": 1.0,
+  "steps": 3200,
+  "replicas": 3,
+  "seed_base": 20261029,
+  "SAXS": "unitless solvent contrast proxy, intracluster Debye forward calculation, no structure factor",
+  "experimental_data_used": false,
+  "experimental_validation": false,
+  "physical_nm_or_ns_mapping": false,
+  "limitations": "Not Martini/GROMACS, no explicit calcium ions, no ion binding thermodynamics, no milk micelle, no physical time/length units. Ca settings are effective attraction strengths, not molar concentrations."
+}

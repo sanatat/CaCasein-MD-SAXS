@@ -1,0 +1,134 @@
+{
+  "status": "executed CPU analysis on synthetic geometries and existing V4 trajectories",
+  "date": "2026-10-29",
+  "shape2sas_direct_run": false,
+  "experimental_saxs_loaded": false,
+  "new_md_simulations": 0,
+  "sphere": {
+    "radius_reduced": 12.0,
+    "number_point_replicas": 3,
+    "points_per_replica": 850,
+    "P_rms_absolute_error_vs_analytic": 0.0029450220420069,
+    "P_max_absolute_error_vs_analytic": 0.004591676640555653,
+    "P_high_q_absolute_error": 0.00456823533642553,
+    "direct_Rg_point_means_reduced": [
+      9.261683579620323,
+      9.463087035392267,
+      9.309441612009277
+    ],
+    "guinier_Rg_reduced": [
+      9.30922220858503,
+      9.516721254562395,
+      9.35760710640518
+    ],
+    "theoretical_sphere_Rg_reduced": 9.2951600308978
+  },
+  "homometric": {
+    "sets_A": [
+      0.0,
+      1.0,
+      4.0,
+      10.0,
+      12.0,
+      17.0
+    ],
+    "sets_B": [
+      0.0,
+      1.0,
+      8.0,
+      11.0,
+      13.0,
+      17.0
+    ],
+    "number_identical_pair_distances": 15,
+    "max_absolute_SAXS_difference_all_q": 3.3306690738754696e-16,
+    "Rg_A_reduced": 6.1553951042064625,
+    "Rg_B_reduced": 6.1553951042064625,
+    "distance_histograms_identical": true
+  },
+  "inverse": {
+    "synthetic_repetitions": 60,
+    "pointwise_sigma_absolute": 0.025,
+    "uniform_prior_mean_probability_A": 0.4999999999999986,
+    "uniform_prior_mean_probability_B": 0.5000000000000004,
+    "uniform_prior_mean_probability_C": 9.561220648603614e-16,
+    "example_chi2_A": 180.73491827513027,
+    "example_chi2_B": 180.73491827513016,
+    "external_prior_A_0.8_B_0.1_C_0.1_mean_posterior_A": 0.8888888888888891
+  },
+  "v4_reanalysis": {
+    "status": "executed_from_existing_v4_trajectories_and_CSVs",
+    "n_trajectories": 15,
+    "bulk_vs_near_matched_saxs_log_rms_mean": 0.05468652382351311,
+    "contact_summary": [
+      {
+        "condition": "no_ca",
+        "n_independent_replicas": 3,
+        "early_contact_mean": 0.0,
+        "late_contact_mean": 0.0,
+        "late_minus_early_mean": 0.0,
+        "late_minus_early_95pct_t_halfwidth": 0.0,
+        "late_replica_sd": 0.0
+      },
+      {
+        "condition": "ca8_inert_bulk",
+        "n_independent_replicas": 3,
+        "early_contact_mean": 0.11666666666666665,
+        "late_contact_mean": 0.14285714285714285,
+        "late_minus_early_mean": 0.02619047619047619,
+        "late_minus_early_95pct_t_halfwidth": 0.11268852387439066,
+        "late_replica_sd": 0.24743582965269673
+      },
+      {
+        "condition": "ca8_coord_bulk",
+        "n_independent_replicas": 3,
+        "early_contact_mean": 0.16666666666666666,
+        "late_contact_mean": 0.0,
+        "late_minus_early_mean": -0.16666666666666666,
+        "late_minus_early_95pct_t_halfwidth": 0.7171087882915771,
+        "late_replica_sd": 0.0
+      },
+      {
+        "condition": "ca8_coord_near",
+        "n_independent_replicas": 3,
+        "early_contact_mean": 3.9333333333333336,
+        "late_contact_mean": 3.301587301587302,
+        "late_minus_early_mean": -0.6317460317460316,
+        "late_minus_early_95pct_t_halfwidth": 1.092465050141867,
+        "late_replica_sd": 1.2709320711800627
+      },
+      {
+        "condition": "ca16_coord_bulk",
+        "n_independent_replicas": 3,
+        "early_contact_mean": 0.19999999999999998,
+        "late_contact_mean": 0.2857142857142857,
+        "late_minus_early_mean": 0.0857142857142857,
+        "late_minus_early_95pct_t_halfwidth": 0.36879880540709675,
+        "late_replica_sd": 0.49487165930539345
+      }
+    ],
+    "matched_saxs": [
+      {
+        "replica": 1,
+        "matched_seed_rms_log_normalized_saxs": 0.04335515963729796
+      },
+      {
+        "replica": 2,
+        "matched_seed_rms_log_normalized_saxs": 0.04290474540061676
+      },
+      {
+        "replica": 3,
+        "matched_seed_rms_log_normalized_saxs": 0.0777996664326246
+      }
+    ]
+  },
+  "units": "all simulated q and distances are uncalibrated reduced units, not nm-1 or nm",
+  "critical_limits": [
+    "No Martini 3",
+    "No explicit-solvent validated calcium force field",
+    "No directly matched experimental SAXS",
+    "No direct Shape2SAS installation in offline environment",
+    "Exact homometric sets are 1D mathematical examples, not casein conformations",
+    "V4 frame correlations and under-sampling make confidence intervals exploratory"
+  ]
+}

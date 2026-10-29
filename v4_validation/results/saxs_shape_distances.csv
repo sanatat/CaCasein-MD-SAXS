@@ -1,0 +1,6 @@
+reference,condition,rms_log_shape_diff_matched_seed_mean,rms_log_shape_diff_matched_seed_sd
+ca8_coord_bulk,no_ca,0.22797298177631328,0.17991751638114556
+ca8_coord_bulk,ca8_inert_bulk,0.006382528754373555,0.011041996756594712
+ca8_coord_bulk,ca8_coord_bulk,0.0,0.0
+ca8_coord_bulk,ca8_coord_near,0.054686523823513085,0.02001783552729904
+ca8_coord_bulk,ca16_coord_bulk,0.31295914640578737,0.2463229843868758

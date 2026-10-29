@@ -1,0 +1,44 @@
+[
+  {
+    "condition": "off",
+    "bridge_strength_proxy_kbt": 0.0,
+    "replicas": 3,
+    "steps": 3200,
+    "late_window_fraction": 0.45,
+    "largest_cluster_chains_mean": 8.0,
+    "cluster_count_mean": 1.0,
+    "largest_cluster_rg_reduced_mean": 3.7734901917725154,
+    "largest_cluster_chains_replica_sd": 0.0,
+    "cluster_count_replica_sd": 0.0,
+    "largest_cluster_rg_reduced_replica_sd": 0.14187803326757642,
+    "mean_scattering_I0_per_scattering_weight": 166.70471389670354
+  },
+  {
+    "condition": "low",
+    "bridge_strength_proxy_kbt": 0.7,
+    "replicas": 3,
+    "steps": 3200,
+    "late_window_fraction": 0.45,
+    "largest_cluster_chains_mean": 8.0,
+    "cluster_count_mean": 1.0,
+    "largest_cluster_rg_reduced_mean": 3.788872038065707,
+    "largest_cluster_chains_replica_sd": 0.0,
+    "cluster_count_replica_sd": 0.0,
+    "largest_cluster_rg_reduced_replica_sd": 0.1907252255677896,
+    "mean_scattering_I0_per_scattering_weight": 166.7005527083286
+  },
+  {
+    "condition": "high",
+    "bridge_strength_proxy_kbt": 1.4,
+    "replicas": 3,
+    "steps": 3200,
+    "late_window_fraction": 0.45,
+    "largest_cluster_chains_mean": 8.0,
+    "cluster_count_mean": 1.0,
+    "largest_cluster_rg_reduced_mean": 3.7587657476398046,
+    "largest_cluster_chains_replica_sd": 0.0,
+    "cluster_count_replica_sd": 0.0,
+    "largest_cluster_rg_reduced_replica_sd": 0.27148428656664275,
+    "mean_scattering_I0_per_scattering_weight": 166.70737216542986
+  }
+]

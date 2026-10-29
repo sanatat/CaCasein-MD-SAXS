@@ -1,0 +1,29 @@
+[
+  {
+    "condition": "off",
+    "n_independent_trajectories": 3,
+    "phosphosite_contacts_mean": 12.066666666666668,
+    "phosphosite_contacts_replica_sd": 1.8773503787104961,
+    "phosphosite_mean_pair_distance_reduced": 3.2192574741739577,
+    "phosphosite_pair_distance_replica_sd": 0.09095911017547012,
+    "contact_cutoff_reduced": 1.75
+  },
+  {
+    "condition": "low",
+    "n_independent_trajectories": 3,
+    "phosphosite_contacts_mean": 17.688888888888886,
+    "phosphosite_contacts_replica_sd": 0.684213525259584,
+    "phosphosite_mean_pair_distance_reduced": 2.8744504506520294,
+    "phosphosite_pair_distance_replica_sd": 0.09533576778939071,
+    "contact_cutoff_reduced": 1.75
+  },
+  {
+    "condition": "high",
+    "n_independent_trajectories": 3,
+    "phosphosite_contacts_mean": 22.51111111111111,
+    "phosphosite_contacts_replica_sd": 2.0659496964224826,
+    "phosphosite_mean_pair_distance_reduced": 2.661544599769195,
+    "phosphosite_pair_distance_replica_sd": 0.07391119112132694,
+    "contact_cutoff_reduced": 1.75
+  }
+]

@@ -1,0 +1,13 @@
+# Local Python environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.nbc
+*.nbi
+# Generated outputs from local reruns
+results_recomputed/
+results_reproduced/
+quick_result/
+new_results/
+.DS_Store

@@ -1,0 +1,38 @@
+name: Python tests and V5 smoke check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run complete test suite
+        run: python -m pytest -q tests v2_sequence_calcium/tests v3_explicit_ca/tests v4_validation/tests v5_saxs_identifiability/tests
+      - name: Recompute V5 artifacts
+        run: python v5_saxs_identifiability/run_v5.py --v4 v4_validation --out results_recomputed
+      - name: Verify output
+        run: |
+          python - <<'PY_CHECK'
+          import json
+          from pathlib import Path
+          p = Path('results_recomputed/results_summary.json')
+          assert p.exists()
+          x = json.loads(p.read_text())
+          assert x['shape2sas_direct_run'] is False
+          assert x['experimental_saxs_loaded'] is False
+          assert x['homometric']['max_absolute_SAXS_difference_all_q'] < 1e-12
+          print('V5 reproducibility smoke check passed')
+          PY_CHECK
