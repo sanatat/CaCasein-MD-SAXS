@@ -2,7 +2,11 @@
 
 **An independent, CPU-friendly coarse-grained simulation and SAXS inverse-problem methods portfolio project.**
 
-> **Scientific status:** V1–V4 use simplified *casein-inspired* (not experimentally calibrated) Langevin MD models. V5 is an independent scattering / identifiability analysis and retrospective audit, **not new MD**. The reported scattering is synthetic. There is **no validated calcium–casein affinity, Martini 3 run, or matched experimental SAXS fit**. This repository is a computational demonstration, not a published biological finding.
+> **Scientific status:** V1–V4 use simplified *casein-inspired* (not experimentally calibrated) Langevin MD models. V5 is an independent scattering / identifiability analysis and retrospective audit, **not new MD**. The reported scattering is synthetic. There is **no validated calcium–casein affinity or matched experimental SAXS fit**. A separate V6 protein-specific Martini 3 pilot has now been executed on a local Linux laptop; it is preliminary and not an equilibrated or validated casein-micelle model. This repository is a computational demonstration, not a published biological finding.
+
+## V6 update — real κ-casein Martini 3 pilot (30 October 2026)
+
+The new [V6 κ-casein Martini 3 / Martini3-IDP pilot](v6_martini3_kappa_casein/README.md) documents **10 ns of executed standard Martini 3 GROMACS simulation** for the unmodified 64-residue C-terminal κ-casein segment and a separate **100 ps Martini3-IDP test** after 500 ps equilibration. These are user-reported local runs; raw trajectory files have not been archived in this repository. This work does **not** establish equilibrium conformations, agreement with SAXS, or a complete κ-casein micelle model.
 
 ## Highlights
 
@@ -45,6 +49,7 @@ For a V5-only environment, install `v5_saxs_identifiability/requirements_v5.txt`
 | `v3_explicit_ca/` | Mobile calcium-like bead proxies | Synthetic, executed |
 | `v4_validation/` | Ion-initialization controls + longer sampling checks | Synthetic, executed |
 | `v5_saxs_identifiability/` | Independent sphere benchmark, homometry, inverse uncertainty, V4 reanalysis | Synthetic, executed |
+| `v6_martini3_kappa_casein/` | Actual κ-casein-tail Martini 3 and Martini3-IDP pilot, results and caveats | Executed locally; initial documentation, raw data not archived |
 | `docs/` | Project integrity, development history, release notes | Documentation |
 
 **V5 research details, equations, caveats and literature references:** [v5/README.md](v5_saxs_identifiability/README.md).
