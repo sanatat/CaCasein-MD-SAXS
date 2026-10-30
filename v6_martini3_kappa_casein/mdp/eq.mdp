@@ -1,0 +1,27 @@
+; 50 ps initial Martini3 CG NVT test (NOT equilibrium sampling)
+integrator               = md
+dt                       = 0.01
+nsteps                   = 5000
+cutoff-scheme            = Verlet
+nstlist                  = 20
+coulombtype              = Reaction-Field
+rcoulomb                 = 1.1
+epsilon-r                = 15
+epsilon-rf               = 0
+vdwtype                  = Cut-off
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+tcoupl                   = v-rescale
+tc-grps                  = System
+tau-t                    = 1.0
+ref-t                    = 300
+pcoupl                   = no
+pbc                      = xyz
+constraints              = none
+continuation             = no
+gen-vel                  = yes
+gen-temp                 = 300
+gen-seed                 = 20261029
+nstxout-compressed       = 1000
+nstenergy                = 500
+nstlog                   = 500

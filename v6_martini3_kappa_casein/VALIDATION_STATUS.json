@@ -1,0 +1,15 @@
+{
+  "status_date": "2026-10-30",
+  "project": "bovine κ-casein 64-residue tail; standard Martini 3 and Martini3-IDP technical pilot",
+  "author_reported_executed": {
+    "standard_martini3_production_ns": 10.0,
+    "standard_martini3_trajectory_frames": 2001,
+    "idp_equilibration_ps": 500.0,
+    "idp_probe_production_ps": 100.0
+  },
+  "source": "author's GROMACS terminal logs in ChatGPT conversation; raw trajectories not included",
+  "packaging_python_tests_passed": 10,
+  "gromacs_rerun_in_packaging_environment": false,
+  "experimental_scattering_validation": false,
+  "force_field_benchmark_converged": false
+}

@@ -1,0 +1,14 @@
+integrator               = steep
+nsteps                   = 5000
+emtol                    = 100.0
+emstep                   = 0.01
+cutoff-scheme            = Verlet
+nstlist                  = 20
+coulombtype              = Reaction-Field
+rcoulomb                 = 1.1
+epsilon-r                = 15
+epsilon-rf               = 0
+vdwtype                  = Cut-off
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+pbc                      = xyz

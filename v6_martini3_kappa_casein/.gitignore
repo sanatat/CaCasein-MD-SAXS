@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+inputs/
+work/
+work_idp*/
+*.tpr
+*.xtc
+*.trr
+*.cpt
+*.edr
+*.log
+*.gro
+*.pdb
+*.itp
+*~

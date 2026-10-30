@@ -1,0 +1,25 @@
+; 100 ps IDP technical production smoke test, NVT, 5 fs timestep
+integrator = md
+dt = 0.005
+nsteps = 20000
+cutoff-scheme = Verlet
+nstlist = 20
+coulombtype = Reaction-Field
+rcoulomb = 1.1
+epsilon-r = 15
+epsilon-rf = 0
+vdwtype = Cut-off
+vdw-modifier = Potential-shift-verlet
+rvdw = 1.1
+tcoupl = v-rescale
+tc-grps = System
+tau-t = 1.0
+ref-t = 300
+pcoupl = no
+pbc = xyz
+constraints = none
+continuation = yes
+gen-vel = no
+nstxout-compressed = 200
+nstenergy = 200
+nstlog = 200
